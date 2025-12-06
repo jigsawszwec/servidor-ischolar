@@ -1,0 +1,22 @@
+{
+  "name": "catraserver",
+  "version": "1.0.0",
+  "description": "Integração Control iD V7 Facial com iScholar",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "initdb": "node bancoinicial.js",
+    "test": "node ./src/tests/recovery.test.js",
+    "test:recovery": "node ./src/tests/recovery.test.js",
+    "pm2:start": "pm2 start ecosystem.config.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ip": "^1.1.8",
+    "dateformat": "^5.0.3",
+    "sqlite3": "^5.1.7",
+    "mysql2": "^3.9.7"
+  }
+}
